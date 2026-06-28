@@ -606,6 +606,41 @@ footer {
 }
 footer img { height: 32px; opacity: 0.55; border-radius: 3px; }
 
+/* ── Active nav link ── */
+nav a.active { color: var(--orange); }
+
+/* ── Page hero (inner pages) ── */
+.page-hero {
+  padding: 4rem 5% 3rem;
+  border-bottom: 2px solid rgba(27,23,78,0.08);
+}
+.page-hero.powder  { background: var(--powder); }
+.page-hero.midnight { background: var(--midnight); }
+.page-hero.midnight h1 { color: var(--cream); }
+.page-hero.midnight .eyebrow { color: var(--orange); }
+.page-hero.midnight .page-hero-sub { color: rgba(248,243,235,0.65); }
+.page-hero h1 { color: var(--midnight); margin-top: 0.3rem; }
+.page-hero-sub {
+  margin-top: 0.75rem;
+  font-size: 1rem;
+  color: var(--black);
+  opacity: 0.65;
+  max-width: 560px;
+  line-height: 1.65;
+}
+
+/* ── Journal page (light background) ── */
+.journal-section { background: var(--cream); }
+.journal-section .overline { color: var(--steel); }
+
+.pub-card.light {
+  background: var(--white);
+  border: 1.5px solid rgba(27,23,78,0.1);
+}
+.pub-card.light h4 { color: var(--midnight); }
+.pub-card.light p  { color: var(--black); opacity: 0.6; }
+.pub-card.light .pub-year { color: var(--steel); opacity: 0.7; }
+
 /* ── Responsive ── */
 @media (max-width: 900px) {
   .teams-grid { grid-template-columns: 1fr; }
