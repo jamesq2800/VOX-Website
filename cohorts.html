@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cohorts | VOX Equity</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="VOX Equity home">
+      <img src="assets/vox-icon.png" alt="VOX Equity mark" />
+      <span>VOX Equity</span>
+    </a>
+    <nav>
+      <a href="who-we-are.html">Who We Are</a>
+      <a href="vox-journal.html">VOX Journal</a>
+      <a href="cohorts.html" class="active">Cohorts</a>
+      <a class="nav-button" href="index.html#contact">Get Involved</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Open menu">&#9776;</button>
+  </header>
+
+  <main>
+
+    <div class="page-hero powder">
+      <p class="eyebrow">Our researchers</p>
+      <h1>Cohorts</h1>
+      <p class="page-hero-sub">VOX Equity organizes its student researchers into cohorts — each cohort comprises teams working on distinct research projects under faculty PI guidance.</p>
+    </div>
+
+    <section class="section cohorts-section">
+
+      <div class="cohort-tabs" role="tablist">
+        <button class="cohort-tab active" role="tab" data-cohort="cohort-1" aria-selected="true">
+          Inaugural Cohort <span class="tab-badge">Current</span>
+        </button>
+        <button class="cohort-tab" role="tab" data-cohort="past" aria-selected="false">
+          Past Cohorts
+        </button>
+      </div>
+
+      <!-- Inaugural Cohort -->
+      <div id="cohort-1" class="cohort-panel active">
+        <p class="cohort-year">2024 – 2025</p>
+
+        <div class="teams-grid">
+
+          <!-- TEAM 1 -->
+          <div class="team-card">
+            <div class="team-header">
+              <div class="team-project">
+                <p class="overline">Research Focus</p>
+                <h3 class="project-title">Team 1 Project / Field Name</h3>
+              </div>
+              <div class="team-pub">
+                <p class="overline">Publication</p>
+                <a href="#" class="pub-chip">Title of Paper / Brief ↗</a>
+              </div>
+            </div>
+
+            <div class="pi-block">
+              <p class="overline">Principal Investigator</p>
+              <div class="pi-card">
+                <div class="headshot-placeholder"><span>PI</span></div>
+                <div class="pi-info">
+                  <strong>Dr. Principal Investigator</strong>
+                  <span class="institution">University Name</span>
+                  <p class="pi-bio">Short bio describing the PI's research interests, expertise, and affiliation with VOX Equity. Two to three sentences is ideal.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="leads-block">
+              <p class="overline">Team Lead(s)</p>
+              <div class="leads-row">
+                <div class="lead-card">
+                  <div class="headshot-placeholder small"><span>TL</span></div>
+                  <strong>Team Lead Name</strong>
+                  <span>Role / Year</span>
+                </div>
+                <div class="lead-card">
+                  <div class="headshot-placeholder small"><span>TL</span></div>
+                  <strong>Team Lead Name</strong>
+                  <span>Role / Year</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="members-block">
+              <p class="overline">Team Members</p>
+              <ul class="members-list">
+                <li>Member Name · Year / Role</li>
+                <li>Member Name · Year / Role</li>
+                <li>Member Name · Year / Role</li>
+                <li>Member Name · Year / Role</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- TEAM 2 -->
+          <div class="team-card">
+            <div class="team-header">
+              <div class="team-project">
+                <p class="overline">Research Focus</p>
+                <h3 class="project-title">Team 2 Project / Field Name</h3>
+              </div>
+              <div class="team-pub">
+                <p class="overline">Publication</p>
+                <a href="#" class="pub-chip">Title of Paper / Brief ↗</a>
+              </div>
+            </div>
+
+            <div class="pi-block">
+              <p class="overline">Principal Investigator</p>
+              <div class="pi-card">
+                <div class="headshot-placeholder"><span>PI</span></div>
+                <div class="pi-info">
+                  <strong>Dr. Principal Investigator</strong>
+                  <span class="institution">University Name</span>
+                  <p class="pi-bio">Short bio describing the PI's research interests, expertise, and affiliation with VOX Equity. Two to three sentences is ideal.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="leads-block">
+              <p class="overline">Team Lead(s)</p>
+              <div class="leads-row">
+                <div class="lead-card">
+                  <div class="headshot-placeholder small"><span>TL</span></div>
+                  <strong>Team Lead Name</strong>
+                  <span>Role / Year</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="members-block">
+              <p class="overline">Team Members</p>
+              <ul class="members-list">
+                <li>Member Name · Year / Role</li>
+                <li>Member Name · Year / Role</li>
+                <li>Member Name · Year / Role</li>
+                <li>Member Name · Year / Role</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Past Cohorts -->
+      <div id="past" class="cohort-panel">
+        <div class="past-empty">
+          <div class="past-icon">&#128196;</div>
+          <h3>Past cohort work will be archived here.</h3>
+          <p>As VOX Equity grows, completed cohorts and their publications will be catalogued in this section for ongoing reference.</p>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <img src="assets/vox-icon.png" alt="VOX mark" />
+    <p>VOX Equity · The think tank of Voices of Equity</p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.cohort-tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('.cohort-tab').forEach(t => {
+          t.classList.remove('active');
+          t.setAttribute('aria-selected', 'false');
+        });
+        document.querySelectorAll('.cohort-panel').forEach(p => p.classList.remove('active'));
+        tab.classList.add('active');
+        tab.setAttribute('aria-selected', 'true');
+        document.getElementById(tab.dataset.cohort).classList.add('active');
+      });
+    });
+  </script>
+
+</body>
+</html>
