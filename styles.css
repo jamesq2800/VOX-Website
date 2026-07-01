@@ -2,12 +2,12 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --midnight: #1B174E;
-  --powder:   #CFDAEE;
-  --steel:    #5C6DAD;
-  --cream:    #F8F3EB;
-  --orange:   #F99534;
-  --black:    #231F20;
+  --midnight: #2A8C84;
+  --powder:   #D6EEEC;
+  --steel:    #1F6B65;
+  --cream:    #FFFFFF;
+  --orange:   #E8907A;
+  --black:    #1A1A1A;
   --white:    #FFFFFF;
 
   --font-display: 'Barlow Condensed', 'Arial Narrow', sans-serif;
