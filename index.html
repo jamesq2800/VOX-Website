@@ -30,67 +30,92 @@
     <!-- ── HERO ── -->
     <section class="hero">
 
-      <!-- Top-right corner: large teal diamond + salmon accents -->
-      <svg class="corner-svg top-right" viewBox="0 0 380 380" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <!-- Radial vignette: white center fading out so pattern shows at edges -->
+      <div class="hero-vignette"></div>
+
+      <!-- Top-right: large teal diamond cluster -->
+      <svg class="corner-svg top-right" viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <defs>
           <pattern id="mesh-tr" x="0" y="0" width="48" height="48" patternUnits="userSpaceOnUse">
-            <line x1="0"  y1="24" x2="24" y2="0"  stroke="white" stroke-width="1.2" opacity="0.5"/>
-            <line x1="24" y1="0"  x2="48" y2="24" stroke="white" stroke-width="1.2" opacity="0.5"/>
-            <line x1="0"  y1="24" x2="24" y2="48" stroke="white" stroke-width="1.2" opacity="0.5"/>
-            <line x1="24" y1="48" x2="48" y2="24" stroke="white" stroke-width="1.2" opacity="0.5"/>
-            <line x1="0"  y1="0"  x2="48" y2="48" stroke="white" stroke-width="0.7" opacity="0.25"/>
-            <line x1="48" y1="0"  x2="0"  y2="48" stroke="white" stroke-width="0.7" opacity="0.25"/>
-            <line x1="24" y1="0"  x2="24" y2="48" stroke="white" stroke-width="0.7" opacity="0.2"/>
-            <line x1="0"  y1="24" x2="48" y2="24" stroke="white" stroke-width="0.7" opacity="0.2"/>
+            <line x1="0"  y1="24" x2="24" y2="0"  stroke="white" stroke-width="1.4" opacity="0.55"/>
+            <line x1="24" y1="0"  x2="48" y2="24" stroke="white" stroke-width="1.4" opacity="0.55"/>
+            <line x1="0"  y1="24" x2="24" y2="48" stroke="white" stroke-width="1.4" opacity="0.55"/>
+            <line x1="24" y1="48" x2="48" y2="24" stroke="white" stroke-width="1.4" opacity="0.55"/>
+            <line x1="0"  y1="0"  x2="48" y2="48" stroke="white" stroke-width="0.8" opacity="0.28"/>
+            <line x1="48" y1="0"  x2="0"  y2="48" stroke="white" stroke-width="0.8" opacity="0.28"/>
+            <line x1="24" y1="0"  x2="24" y2="48" stroke="white" stroke-width="0.8" opacity="0.22"/>
+            <line x1="0"  y1="24" x2="48" y2="24" stroke="white" stroke-width="0.8" opacity="0.22"/>
           </pattern>
+          <linearGradient id="teal-fade-tr" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#2A8C84" stop-opacity="1"/>
+            <stop offset="100%" stop-color="#1F6B65" stop-opacity="0.85"/>
+          </linearGradient>
           <clipPath id="dclip-tr">
-            <polygon points="190,0 380,190 190,380 0,190"/>
+            <polygon points="240,0 480,240 240,480 0,240"/>
           </clipPath>
         </defs>
+        <!-- Shadow/depth layer -->
+        <polygon points="250,10 480,250 250,480 10,250" fill="rgba(0,0,0,0.06)"/>
         <!-- Main teal diamond -->
-        <polygon points="190,0 380,190 190,380 0,190" fill="#2A8C84"/>
+        <polygon points="240,0 480,240 240,480 0,240" fill="url(#teal-fade-tr)"/>
         <!-- Mesh overlay -->
-        <rect x="0" y="0" width="380" height="380" fill="url(#mesh-tr)" clip-path="url(#dclip-tr)"/>
-        <!-- Salmon accent top -->
-        <polygon points="270,0 380,0 380,90 310,40" fill="#E8907A"/>
-        <!-- Smaller salmon lower -->
-        <polygon points="350,110 380,80 380,160 350,160" fill="#E8907A" opacity="0.7"/>
+        <rect x="0" y="0" width="480" height="480" fill="url(#mesh-tr)" clip-path="url(#dclip-tr)"/>
+        <!-- Salmon accent — top corner block -->
+        <polygon points="310,0 480,0 480,130 380,50" fill="#E8907A"/>
+        <!-- Smaller salmon sliver -->
+        <polygon points="420,140 480,90 480,195 420,195" fill="#E8907A" opacity="0.65"/>
+        <!-- Tiny teal-light accent bottom of salmon -->
+        <polygon points="380,50 480,130 480,145 380,65" fill="rgba(255,255,255,0.18)"/>
       </svg>
 
-      <!-- Bottom-left corner: teal diamond + salmon -->
-      <svg class="corner-svg bot-left" viewBox="0 0 340 340" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <!-- Bottom-left: teal diamond + salmon -->
+      <svg class="corner-svg bot-left" viewBox="0 0 420 420" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <defs>
           <pattern id="mesh-bl" x="0" y="0" width="48" height="48" patternUnits="userSpaceOnUse">
-            <line x1="0"  y1="24" x2="24" y2="0"  stroke="white" stroke-width="1.2" opacity="0.5"/>
-            <line x1="24" y1="0"  x2="48" y2="24" stroke="white" stroke-width="1.2" opacity="0.5"/>
-            <line x1="0"  y1="24" x2="24" y2="48" stroke="white" stroke-width="1.2" opacity="0.5"/>
-            <line x1="24" y1="48" x2="48" y2="24" stroke="white" stroke-width="1.2" opacity="0.5"/>
-            <line x1="0"  y1="0"  x2="48" y2="48" stroke="white" stroke-width="0.7" opacity="0.25"/>
-            <line x1="48" y1="0"  x2="0"  y2="48" stroke="white" stroke-width="0.7" opacity="0.25"/>
+            <line x1="0"  y1="24" x2="24" y2="0"  stroke="white" stroke-width="1.4" opacity="0.55"/>
+            <line x1="24" y1="0"  x2="48" y2="24" stroke="white" stroke-width="1.4" opacity="0.55"/>
+            <line x1="0"  y1="24" x2="24" y2="48" stroke="white" stroke-width="1.4" opacity="0.55"/>
+            <line x1="24" y1="48" x2="48" y2="24" stroke="white" stroke-width="1.4" opacity="0.55"/>
+            <line x1="0"  y1="0"  x2="48" y2="48" stroke="white" stroke-width="0.8" opacity="0.28"/>
+            <line x1="48" y1="0"  x2="0"  y2="48" stroke="white" stroke-width="0.8" opacity="0.28"/>
           </pattern>
           <clipPath id="dclip-bl">
-            <polygon points="170,0 340,170 170,340 0,170"/>
+            <polygon points="210,0 420,210 210,420 0,210"/>
           </clipPath>
         </defs>
-        <polygon points="170,0 340,170 170,340 0,170" fill="#2A8C84"/>
-        <rect x="0" y="0" width="340" height="340" fill="url(#mesh-bl)" clip-path="url(#dclip-bl)"/>
-        <!-- Salmon accent -->
-        <polygon points="0,240 80,260 0,340" fill="#E8907A"/>
-        <polygon points="0,170 60,200 0,240" fill="#E8907A" opacity="0.6"/>
+        <polygon points="220,10 420,220 220,420 10,220" fill="rgba(0,0,0,0.05)"/>
+        <polygon points="210,0 420,210 210,420 0,210" fill="#2A8C84"/>
+        <rect x="0" y="0" width="420" height="420" fill="url(#mesh-bl)" clip-path="url(#dclip-bl)"/>
+        <!-- Salmon bottom-left -->
+        <polygon points="0,290 100,320 0,420" fill="#E8907A"/>
+        <polygon points="0,210 70,245 0,295" fill="#E8907A" opacity="0.55"/>
+      </svg>
+
+      <!-- Top-left: small salmon-only accent -->
+      <svg class="corner-svg top-left-sm" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <polygon points="90,0 180,90 90,180 0,90" fill="#E8907A" opacity="0.22"/>
+        <polygon points="90,20 160,90 90,160 20,90" fill="none" stroke="#E8907A" stroke-width="2" opacity="0.3"/>
       </svg>
 
       <!-- Hero content -->
       <div class="hero-content">
-        <img class="hero-logo" src="assets/vox-logo.png" alt="VOX Equity wordmark" />
-        <p class="eyebrow">The think tank of Voices of Equity</p>
-        <h1>Building awareness,<br>inspiring change,<br>empowering communities.</h1>
+        <div class="hero-kicker">
+          <span class="hero-rule-v"></span>
+          <p class="eyebrow">The think tank of Voices of Equity</p>
+        </div>
+        <h1>Building<br>awareness,<br><em>inspiring</em> change.</h1>
         <hr class="hero-divider">
         <p class="hero-text">VOX Equity is a student-led research and policy think tank advancing community-centered scholarship in health equity, public health access, and systems-level change.</p>
         <div class="hero-actions">
           <a class="button primary" href="cohorts.html">Meet Our Cohorts</a>
-          <a class="button secondary" href="#contact">Get Involved</a>
+          <a class="button ghost" href="#contact">Get Involved →</a>
+        </div>
+        <div class="hero-badge">
+          <img src="assets/vox-icon.png" alt="" />
+          <span>A think tank of <strong>Voices of Equity</strong></span>
         </div>
       </div>
+
     </section>
 
     <!-- ── GET INVOLVED ── -->
