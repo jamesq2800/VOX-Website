@@ -581,6 +581,27 @@ nav a.active { color: var(--teal); }
   line-height: 1.65;
   margin-top: 0.25rem;
 }
+.team-contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.75rem;
+}
+.team-email {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--teal);
+  text-decoration: none;
+  border: 1.5px solid var(--teal-lt);
+  border-radius: 100px;
+  padding: 0.2rem 0.65rem;
+  transition: background 0.15s, color 0.15s;
+}
+.team-email:hover {
+  background: var(--teal);
+  color: var(--white);
+  border-color: var(--teal);
+}
 
 @media (max-width: 900px) {
   .team-grid { grid-template-columns: 1fr 1fr; }
