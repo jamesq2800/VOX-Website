@@ -649,7 +649,7 @@ nav a.active { color: var(--teal); }
 }
 .mission-number {
   font-family: var(--font-display);
-  font-size: 2.8rem;
+  font-size: 3.6rem;
   font-weight: 900;
   color: rgba(255,255,255,0.15);
   line-height: 1;
@@ -657,6 +657,8 @@ nav a.active { color: var(--teal); }
 .mission-label .overline {
   color: var(--salmon);
   margin-bottom: 0;
+  font-size: 0.85rem;
+  letter-spacing: 0.14em;
 }
 .mission-text {
   font-size: 1.15rem;
