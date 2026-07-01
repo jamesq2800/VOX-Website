@@ -12,7 +12,7 @@
 <body>
 
   <header class="site-header">
-    <a class="brand" href="index.html" aria-label="VOX Equity home">
+    <a class="brand" href="index.html">
       <img src="assets/vox-icon.png" alt="VOX Equity mark" />
       <span>VOX Equity</span>
     </a>
@@ -27,10 +27,31 @@
 
   <main>
 
-    <div class="page-hero powder">
-      <p class="eyebrow">Our researchers</p>
-      <h1>Cohorts</h1>
-      <p class="page-hero-sub">VOX Equity organizes its student researchers into cohorts — each cohort comprises teams working on distinct research projects under faculty PI guidance.</p>
+    <div class="page-hero">
+      <svg class="corner-svg top-right" viewBox="0 0 280 280" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs>
+          <pattern id="mesh-coh" x="0" y="0" width="48" height="48" patternUnits="userSpaceOnUse">
+            <line x1="0"  y1="24" x2="24" y2="0"  stroke="white" stroke-width="1.2" opacity="0.5"/>
+            <line x1="24" y1="0"  x2="48" y2="24" stroke="white" stroke-width="1.2" opacity="0.5"/>
+            <line x1="0"  y1="24" x2="24" y2="48" stroke="white" stroke-width="1.2" opacity="0.5"/>
+            <line x1="24" y1="48" x2="48" y2="24" stroke="white" stroke-width="1.2" opacity="0.5"/>
+            <line x1="0"  y1="0"  x2="48" y2="48" stroke="white" stroke-width="0.7" opacity="0.25"/>
+            <line x1="48" y1="0"  x2="0"  y2="48" stroke="white" stroke-width="0.7" opacity="0.25"/>
+          </pattern>
+          <clipPath id="dclip-coh">
+            <polygon points="140,0 280,140 140,280 0,140"/>
+          </clipPath>
+        </defs>
+        <polygon points="140,0 280,140 140,280 0,140" fill="#2A8C84"/>
+        <rect x="0" y="0" width="280" height="280" fill="url(#mesh-coh)" clip-path="url(#dclip-coh)"/>
+        <polygon points="210,0 280,0 280,70 240,30" fill="#E8907A"/>
+      </svg>
+      <div class="page-hero-content">
+        <p class="eyebrow">Our researchers</p>
+        <h1>Cohorts</h1>
+        <hr class="page-hero-divider">
+        <p class="page-hero-sub">VOX Equity organizes its student researchers into cohorts — each cohort comprises teams working on distinct research projects under faculty PI guidance.</p>
+      </div>
     </div>
 
     <section class="section cohorts-section">
@@ -44,7 +65,6 @@
         </button>
       </div>
 
-      <!-- Inaugural Cohort -->
       <div id="cohort-1" class="cohort-panel active">
         <p class="cohort-year">2024 – 2025</p>
 
@@ -152,7 +172,6 @@
         </div>
       </div>
 
-      <!-- Past Cohorts -->
       <div id="past" class="cohort-panel">
         <div class="past-empty">
           <div class="past-icon">&#128196;</div>
