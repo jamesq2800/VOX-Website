@@ -654,15 +654,15 @@ nav a.active { color: var(--teal); }
   color: rgba(255,255,255,0.15);
   line-height: 1;
 }
-.mission-label .overline {
+.mission-title {
   color: var(--salmon);
-  margin-bottom: 0;
   font-family: var(--font-display);
   font-size: 3.6rem;
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 0.04em;
   line-height: 1;
+  margin: 0;
 }
 .mission-text {
   font-size: 1.15rem;
