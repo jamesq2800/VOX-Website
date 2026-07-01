@@ -12,7 +12,7 @@
 <body>
 
   <header class="site-header">
-    <a class="brand" href="index.html" aria-label="VOX Equity home">
+    <a class="brand" href="index.html">
       <img src="assets/vox-icon.png" alt="VOX Equity mark" />
       <span>VOX Equity</span>
     </a>
@@ -27,15 +27,64 @@
 
   <main>
 
+    <!-- ── HERO ── -->
     <section class="hero">
-      <div class="hero-pattern left"></div>
-      <div class="hero-pattern right"></div>
-      <div class="ribbon orange"></div>
-      <div class="ribbon blue"></div>
+
+      <!-- Top-right corner: large teal diamond + salmon accents -->
+      <svg class="corner-svg top-right" viewBox="0 0 380 380" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs>
+          <pattern id="mesh-tr" x="0" y="0" width="48" height="48" patternUnits="userSpaceOnUse">
+            <line x1="0"  y1="24" x2="24" y2="0"  stroke="white" stroke-width="1.2" opacity="0.5"/>
+            <line x1="24" y1="0"  x2="48" y2="24" stroke="white" stroke-width="1.2" opacity="0.5"/>
+            <line x1="0"  y1="24" x2="24" y2="48" stroke="white" stroke-width="1.2" opacity="0.5"/>
+            <line x1="24" y1="48" x2="48" y2="24" stroke="white" stroke-width="1.2" opacity="0.5"/>
+            <line x1="0"  y1="0"  x2="48" y2="48" stroke="white" stroke-width="0.7" opacity="0.25"/>
+            <line x1="48" y1="0"  x2="0"  y2="48" stroke="white" stroke-width="0.7" opacity="0.25"/>
+            <line x1="24" y1="0"  x2="24" y2="48" stroke="white" stroke-width="0.7" opacity="0.2"/>
+            <line x1="0"  y1="24" x2="48" y2="24" stroke="white" stroke-width="0.7" opacity="0.2"/>
+          </pattern>
+          <clipPath id="dclip-tr">
+            <polygon points="190,0 380,190 190,380 0,190"/>
+          </clipPath>
+        </defs>
+        <!-- Main teal diamond -->
+        <polygon points="190,0 380,190 190,380 0,190" fill="#2A8C84"/>
+        <!-- Mesh overlay -->
+        <rect x="0" y="0" width="380" height="380" fill="url(#mesh-tr)" clip-path="url(#dclip-tr)"/>
+        <!-- Salmon accent top -->
+        <polygon points="270,0 380,0 380,90 310,40" fill="#E8907A"/>
+        <!-- Smaller salmon lower -->
+        <polygon points="350,110 380,80 380,160 350,160" fill="#E8907A" opacity="0.7"/>
+      </svg>
+
+      <!-- Bottom-left corner: teal diamond + salmon -->
+      <svg class="corner-svg bot-left" viewBox="0 0 340 340" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs>
+          <pattern id="mesh-bl" x="0" y="0" width="48" height="48" patternUnits="userSpaceOnUse">
+            <line x1="0"  y1="24" x2="24" y2="0"  stroke="white" stroke-width="1.2" opacity="0.5"/>
+            <line x1="24" y1="0"  x2="48" y2="24" stroke="white" stroke-width="1.2" opacity="0.5"/>
+            <line x1="0"  y1="24" x2="24" y2="48" stroke="white" stroke-width="1.2" opacity="0.5"/>
+            <line x1="24" y1="48" x2="48" y2="24" stroke="white" stroke-width="1.2" opacity="0.5"/>
+            <line x1="0"  y1="0"  x2="48" y2="48" stroke="white" stroke-width="0.7" opacity="0.25"/>
+            <line x1="48" y1="0"  x2="0"  y2="48" stroke="white" stroke-width="0.7" opacity="0.25"/>
+          </pattern>
+          <clipPath id="dclip-bl">
+            <polygon points="170,0 340,170 170,340 0,170"/>
+          </clipPath>
+        </defs>
+        <polygon points="170,0 340,170 170,340 0,170" fill="#2A8C84"/>
+        <rect x="0" y="0" width="340" height="340" fill="url(#mesh-bl)" clip-path="url(#dclip-bl)"/>
+        <!-- Salmon accent -->
+        <polygon points="0,240 80,260 0,340" fill="#E8907A"/>
+        <polygon points="0,170 60,200 0,240" fill="#E8907A" opacity="0.6"/>
+      </svg>
+
+      <!-- Hero content -->
       <div class="hero-content">
         <img class="hero-logo" src="assets/vox-logo.png" alt="VOX Equity wordmark" />
         <p class="eyebrow">The think tank of Voices of Equity</p>
-        <h1>Building awareness, inspiring change, empowering communities.</h1>
+        <h1>Building awareness,<br>inspiring change,<br>empowering communities.</h1>
+        <hr class="hero-divider">
         <p class="hero-text">VOX Equity is a student-led research and policy think tank advancing community-centered scholarship in health equity, public health access, and systems-level change.</p>
         <div class="hero-actions">
           <a class="button primary" href="cohorts.html">Meet Our Cohorts</a>
@@ -44,7 +93,8 @@
       </div>
     </section>
 
-    <section id="contact" class="section contact-section">
+    <!-- ── GET INVOLVED ── -->
+    <section id="contact" class="contact-section">
       <div>
         <p class="eyebrow">Get involved</p>
         <h2>Join the team, propose a project, or partner with VOX Equity.</h2>
