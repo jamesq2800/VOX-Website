@@ -869,3 +869,67 @@ footer img { height: 32px; opacity: 0.5; border-radius: 3px; }
   .corner-svg.bot-left  { width: 200px; height: 200px; }
   .corner-svg.bot-right { width: 160px; height: 160px; }
 }
+
+/* ── APPLY SECTION ── */
+.apply-section {
+  background: var(--black);
+  padding: 5rem 5%;
+}
+.apply-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 4rem;
+  align-items: center;
+}
+.apply-text .eyebrow { color: var(--salmon); }
+.apply-text h2 { color: var(--white); margin: 0.4rem 0 1rem; }
+.apply-desc {
+  color: rgba(255,255,255,0.72);
+  font-size: 1rem;
+  line-height: 1.75;
+  max-width: 520px;
+  margin-bottom: 1.75rem;
+}
+.apply-desc strong { color: var(--white); }
+.deadline-card {
+  background: var(--teal);
+  padding: 2rem 2.5rem;
+  text-align: center;
+  clip-path: polygon(12px 0%, 100% 0%, calc(100% - 12px) 100%, 0% 100%);
+  min-width: 180px;
+}
+.deadline-label {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.65);
+  margin-bottom: 0.5rem;
+}
+.deadline-date {
+  font-family: var(--font-display);
+  font-size: 4.5rem;
+  font-weight: 900;
+  line-height: 1;
+  color: var(--white);
+}
+.deadline-year {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: rgba(255,255,255,0.5);
+  margin-bottom: 0.5rem;
+}
+.deadline-time {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--salmon);
+  letter-spacing: 0.06em;
+}
+@media (max-width: 700px) {
+  .apply-inner { grid-template-columns: 1fr; }
+  .apply-deadline { display: flex; justify-content: center; }
+}
+
