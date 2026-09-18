@@ -1016,3 +1016,23 @@ footer img { height: 32px; opacity: 0.5; border-radius: 3px; }
   }
   .journal-cover-wrap { max-width: 260px; margin: 0 auto; }
 }
+
+/* past tab badge */
+.tab-badge.past {
+  background: rgba(255,255,255,0.15);
+  color: rgba(255,255,255,0.7);
+}
+/* pub chip as link */
+a.pub-chip-link {
+  display: inline-block;
+  background: var(--teal);
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+  letter-spacing: 0.04em;
+  transition: background 0.2s;
+}
+a.pub-chip-link:hover { background: var(--teal-dk); }
