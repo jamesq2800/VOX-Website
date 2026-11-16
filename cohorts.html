@@ -17,13 +17,19 @@
       <img src="assets/vox-icon.png" alt="VOX Equity mark" />
       <span>VOX Equity</span>
     </a>
-    <nav>
+        <nav>
       <a href="who-we-are.html">Who We Are</a>
       <a href="vox-journal.html">VOX Journal</a>
       <a href="cohorts.html" class="active">Cohorts</a>
       <a class="nav-button" href="index.html#contact">Get Involved</a>
     </nav>
-    <button class="nav-toggle" aria-label="Open menu">&#9776;</button>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+    <div class="mobile-nav" id="mobile-nav">
+      <a href="who-we-are.html">Who We Are</a>
+      <a href="vox-journal.html">VOX Journal</a>
+      <a href="cohorts.html" class="active">Cohorts</a>
+      <a class="nav-button" href="index.html#contact">Get Involved</a>
+    </div>
   </header>
 
   <main>
@@ -363,5 +369,32 @@
     });
   </script>
 
+  <script>
+    (function() {
+      var toggle = document.querySelector('.nav-toggle');
+      var header = document.querySelector('.site-header');
+      var mobileLinks = document.querySelectorAll('.mobile-nav a');
+      if (!toggle) return;
+      toggle.addEventListener('click', function() {
+        var open = header.classList.toggle('nav-open');
+        toggle.setAttribute('aria-expanded', open);
+        toggle.innerHTML = open ? '&#10005;' : '&#9776;';
+      });
+      mobileLinks.forEach(function(link) {
+        link.addEventListener('click', function() {
+          header.classList.remove('nav-open');
+          toggle.setAttribute('aria-expanded', 'false');
+          toggle.innerHTML = '&#9776;';
+        });
+      });
+      document.addEventListener('click', function(e) {
+        if (!header.contains(e.target)) {
+          header.classList.remove('nav-open');
+          toggle.setAttribute('aria-expanded', 'false');
+          toggle.innerHTML = '&#9776;';
+        }
+      });
+    })();
+  </script>
 </body>
 </html>
